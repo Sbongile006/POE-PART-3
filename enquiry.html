@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Page Title-->
+        <title>Enquiry</title>
+
+        <link rel="stylesheet" href="CSS/style.css">
+
+    </head>
+    <body>
+        <!--Main site header-->
+        <header>
+            <h1>Make an Enquiry</h1>
+        </header>
+        <!--Navigation Menu-->
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="contacts.html">Contacts</a>
+    </nav>
+
+  <div class="container">
+
+    <h1>Customer Service & Support</h1>
+
+    <p>
+        We value our customers. Please use the form below to report issues,
+        ask questions, give feedback, or request assistance with your order.
+    </p>
+
+    <form class="enquiry-form" onsubmit="return validateEnquiry()">
+
+        <!-- NAME -->
+        <label>Full Name:</label><br>
+        <input type="text" required><br><br>
+
+        <!-- EMAIL -->
+        <label>Email Address:</label><br>
+        <input type="email" required><br><br>
+
+        <!-- PHONE -->
+        <label>Phone Number:</label><br>
+        <input type="text" required><br><br>
+
+        <!-- ORDER NUMBER -->
+        <label>Order Number (if available):</label><br>
+        <input type="text"><br><br>
+
+       <!-- ENQUIRY TYPE -->
+<label>Select Enquiry Type:</label><br>
+
+<select id="enquiryType" required>
+
+    <option value="">-- Select Option --</option>
+
+    <option>Product Availability</option>
+    <option>Product Price</option>
+    <option>Volunteer Opportunity</option>
+    <option>Sponsorship Opportunity</option>
+
+</select><br><br>
+        <!-- MESSAGE -->
+        <label>Explain Your Issue:</label><br>
+
+        <textarea rows="6"
+        placeholder="Please describe your issue or enquiry here..."
+        required></textarea><br><br>
+
+        <!-- SUBMIT -->
+        <input type="submit" value="Submit Request">
+
+    </form>
+
+</div>
+       <style>
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+</style>
+
+<div class="social-links">
+    <a href="https://www.facebook.com/yourpage" target="_blank" aria-label="Facebook">
+        <img src="Images/facebook.png.jpg" alt="Facebook" width="30">
+    </a>
+
+    <a href="https://www.instagram.com/yourpage" target="_blank" aria-label="Instagram">
+        <img src="Images/instagram.png.jpg" alt="Instagram" width="30">
+    </a>
+
+    <a href="https://twitter.com/yourpage" target="_blank" aria-label="X/Twitter">
+        <img src="Images/twitter.png.jpg" alt="Twitter" width="30">
+    </a>
+
+    <a href="https://www.linkedin.com/company/yourpage" target="_blank" aria-label="LinkedIn">
+        <img src="Images/linkedin.png.jpg" alt="LinkedIn" width="30">
+    </a>
+</div>
+     <footer>
+        <p>&copy; All Right Reserved By Thandi's Bakery</p>
+    </footer>
+
+    </body>
+
+</html>

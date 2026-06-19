@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Page Title-->
+        <title>Products - Thandi's Bakery</title>
+
+      <link rel="stylesheet" href="CSS/style.css">
+
+    </head>
+    <body>
+        <header>
+            <!--Main Site Header-->
+            <h1>Thandi's Bakery</h1>
+            <p>Fresh Homemade Treats</p>
+        </header>
+        <!--Navigation Menu-->
+        <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="contacts.html">Contacts</a>
+    </nav>
+    <div class="container">
+
+        <h2><strong>Our Products</strong></h2>
+        <p>Freshly baked with love. Perfect for every occasion.</p>
+
+
+    <h2><strong>Our Products</strong></h2>
+    <p>Freshly baked with love. Perfect for every occasion.</p>
+
+    <!-- Product Filter Buttons -->
+    <div class="filter-buttons">
+        <button onclick="showAll()">All Products</button>
+        <button onclick="showScones()">Scones</button>
+        <button onclick="showBiscuits()">Biscuits</button>
+        <button onclick="showBananaBread()">Banana Bread</button>
+        <button onclick="showBuns()">Buns</button>
+        <button onclick="showMuffins()">Muffins</button>
+    </div>
+
+  <section class="products">
+    <input
+type="text"
+id="searchBox"
+placeholder="Search products..."
+onkeyup="searchProducts()">
+
+  <!-- SCONE -->
+  <div class="product-card scone" id="scones">
+    <img src="images/scones.jpg" alt="Scones">
+    <div class="product-info">
+      <h2>SCONES</h2>
+      <p>Soft, fluffy and perfectly baked.</p>
+      <ul>
+        <li>5L Plain Scones <span>R200.00</span></li>
+        <li>10L Plain Scones <span>R300.00</span></li>
+        <li>20L Plain Scones <span>R500.00</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- BISCUITS -->
+  <div class="product-card biscuit" id="biscuits">
+    <img src="images/biscuits.jpg" alt="Biscuits">
+    <div class="product-info">
+      <h2>BISCUITS</h2>
+      <p>Crispy, sweet and homemade.</p>
+      <ul>
+        <li>5L Biscuits <span>R300.00</span></li>
+        <li>10L Biscuits <span>R450.00</span></li>
+        <li>20L Biscuits <span>R800.00</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- BANANA BREAD -->
+  <div class="product-card banana" id="banana"> 
+    <img src="images/banana.jpg" alt="Banana Bread" height="350">
+    <div class="product-info">
+      <h2>BANANA BREAD</h2>
+      <p>Moist and delicious with ripe bananas.</p>
+      <ul>
+        <li>5L Banana Bread <span>R300.00</span></li>
+        <li>10L Banana Bread <span>R450.00</span></li>
+        <li>20L Banana Bread <span>R750.00</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- BUNS -->
+<div class="product-card buns" id="buns">
+    <img src="images/buns.jpg" alt="Buns">
+    <div class="product-info">
+      <h2>BUNS</h2>
+      <p>Soft, fresh and perfect for any meal.</p>
+      <ul>
+        <li>Buns (Tray) <span>R200.00</span></li>
+      </ul>
+    </div>
+  </div>
+
+   <!-- Muffins -->
+  <div class="product-card muffin" id="muffins">
+    <img src="images/muffins2.jpg" alt="Muffins">
+    <div class="product-info">
+      <h2>Muffins</h2>
+      <p>Fluffy baked and mouth satisfaction.</p>
+      <ul>
+        <li>5L Muffins<span>R300.00</span></li>
+        <li>10L Muffins <span>R450.00</span></li>
+        <li>20L Muffins<span>R700.00</span></li>
+      </ul>
+    </div>
+  </div>
+
+   <!-- ADDITS -->
+  <div class="product-card addit">
+    <img src="images/addits.jpg" alt="Addits">
+    <div class="product-info">
+      <h2>Addits</h2>
+      <p>Choose what to add base on our extras to make your biscuits and scones more delicious.</p>
+      <ul>
+        <li>Ultramel<span>R100.00</span></li>
+        <li>Ginger<span>R50.00</span></li>
+        <li>Coconut<span>R60.00</span></li>
+        <li>Decoration (Biscuits) from<span>R100.00-R300.00</span></li>
+      </ul>
+    </div>
+  </div>
+  <!-- Bakery Gallery -->
+
+<div id="lightbox">
+    <span onclick="closeLightbox()">&times;</span>
+
+    <img id="lightbox-img">
+</div>
+   <style>
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+</style>
+
+<section class="order-section">
+
+    <h2>Place Your Order</h2>
+    <p>Please select your product and fill in your details.</p>
+
+    <form class="order-form" onsubmit="return validateOrder()">
+
+        <!-- PRODUCT -->
+        <label for="product">Select Product</label>
+
+        <select id="product" name="product" required>
+            <option value="">-- Choose Product --</option>
+
+            <option>Scones - 5L (R200.00)</option>
+            <option>Scones - 10L (R300.00)</option>
+            <option>Scones - 20L (R500.00)</option>
+
+            <option>Biscuits - 5L (R300.00)</option>
+            <option>Biscuits - 10L (R450.00)</option>
+            <option>Biscuits - 20L (R800.00)</option>
+
+            <option>Banana Bread - 5L (R300.00)</option>
+            <option>Banana Bread - 10L (R450.00)</option>
+            <option>Banana Bread - 20L (R750.00)</option>
+
+            <option>Buns Tray (R200.00)</option>
+
+            <option>Muffins - 5L (R300.00)</option>
+            <option>Muffins - 10L (R450.00)</option>
+            <option>Muffins - 20L (R700.00)</option>
+        </select>
+
+        <!-- CUSTOMER NAME -->
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <!-- PHONE -->
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+        <!-- ADDRESS -->
+        <label for="address">Delivery Address</label>
+        <textarea id="address" name="address" rows="4" placeholder="Enter delivery address" required></textarea>
+
+        <!-- NOTES -->
+        <label for="notes">Extra Notes</label>
+        <textarea id="notes" name="notes" rows="3" placeholder="Special requests..."></textarea>
+
+        <!-- BUTTON -->
+        <button type="submit">Place Order</button>
+
+    </form>
+
+</section>
+
+
+<div class="social-links">
+    <a href="https://www.facebook.com/yourpage" target="_blank" aria-label="Facebook">
+        <img src="Images/facebook.png.jpg" alt="Facebook" width="30">
+    </a>
+
+    <a href="https://www.instagram.com/yourpage" target="_blank" aria-label="Instagram">
+        <img src="Images/instagram.png.jpg" alt="Instagram" width="30">
+    </a>
+
+    <a href="https://twitter.com/yourpage" target="_blank" aria-label="X/Twitter">
+        <img src="Images/twitter.png.jpg" alt="Twitter" width="30">
+    </a>
+
+    <a href="https://www.linkedin.com/company/yourpage" target="_blank" aria-label="LinkedIn">
+        <img src="Images/linkedin.png.jpg" alt="LinkedIn" width="30">
+    </a>
+</div>
+     <footer>
+        <p>&copy; All Right Reserved By Thandi's Bakery</p>
+    </footer>
+    <script src="JS/script.js"></script>
+
+    </body>
+</html>
