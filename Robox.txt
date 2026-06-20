@@ -1,6 +1,4 @@
 User-agent: *
-
 Allow: /
 
-Sitemap:
-https://yourwebsite.com/sitemap.xml
+Sitemap: https://sbongile006.github.io/POE-PART-3/sitemap.xml
