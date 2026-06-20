@@ -19,7 +19,7 @@ body {
 
     background-image:
     linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-    url("../Images/bakery.jpg");
+    url("images/bakery.jpg");
 
     
     background-size: cover;
