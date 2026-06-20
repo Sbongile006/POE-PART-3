@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-<url>
-<loc>https://yourwebsite.com/index.html</loc>
-</url>
+  <url>
+    <loc>https://sbongile006.github.io/POE-PART-3/index.html</loc>
+  </url>
 
-<url>
-<loc>https://yourwebsite.com/about.html</loc>
-</url>
+  <url>
+    <loc>https://sbongile006.github.io/POE-PART-3/about.html</loc>
+  </url>
 
-<url>
-<loc>https://yourwebsite.com/products.html</loc>
-</url>
+  <url>
+    <loc>https://sbongile006.github.io/POE-PART-3/products.html</loc>
+  </url>
 
-<url>
-<loc>https://yourwebsite.com/enquiry.html</loc>
-</url>
+  <url>
+    <loc>https://sbongile006.github.io/POE-PART-3/enquiry.html</loc>
+  </url>
 
-<url>
-<loc>https://yourwebsite.com/contacts.html</loc>
-</url>
+  <url>
+    <loc>https://sbongile006.github.io/POE-PART-3/contacts.html</loc>
+  </url>
 
 </urlset>
